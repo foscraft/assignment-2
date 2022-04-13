@@ -3,6 +3,7 @@ import unittest
 # from perfect_guess import perfectGuess
 from perfect_square import perfectSquare
 from power_of_four import powerOfFour
+from simple_statistics import statss
 # from simple_statistics import statss
 # from timeout import timeOutResponse
 # from web_page_r import webPageResponse
@@ -25,7 +26,8 @@ class TestAssignment(unittest.TestCase):
         pass
 
     def test_simple_stats(self):
-        pass
+        self.assertEqual(statss([56,44,5,6,6,7,8,99,34,56,3232]),
+                        {'minimum value': 5, 'maximum_value': 3232, 'average': 323, 'median value': 34})
 
     def test_timeout(self):
         pass
