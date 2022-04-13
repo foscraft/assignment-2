@@ -1,6 +1,6 @@
 import math
 
-def number_perfect_square(number):
+def perfectSquare(number):
     '''
     Function that checks if  a number is a perfect square
     '''
@@ -12,5 +12,5 @@ def number_perfect_square(number):
     return False
 
 #invoke function
-print(number_perfect_square(64))
+print(perfectSquare(64))
  

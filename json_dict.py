@@ -2,7 +2,7 @@ import re
 import requests
 import json
 
-def jsonResponse():
+def jsonsResponse():
     '''
     Python project to read public data returned from URL, and parsing JSON to a
     dictionary object
@@ -21,4 +21,4 @@ def jsonResponse():
     #json.dump(lst,out_file,indent=2, sort_keys=True)
     
 
-print(jsonResponse())
+print(jsonsResponse())
