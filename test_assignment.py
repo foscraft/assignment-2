@@ -1,5 +1,9 @@
 import unittest
-# from json_dict import jsonsResponse
+from urllib import response
+
+import requests
+from json_dict import toJson
+# from json_dict import jsonsResponse, toJson
 # from perfect_guess import perfectGuess
 from perfect_square import perfectSquare
 from power_of_four import powerOfFour
@@ -13,6 +17,13 @@ class TestAssignment(unittest.TestCase):
     def test_perfect_guess(self):
         pass
 
+    def test_json_dict(self):
+        pass
+    
+    def test_toJson(self):
+        resp = requests.get('https://api.openalex.org/authors')
+        self.assertEqual(resp.status_code, 200)
+
     def test_perfect_square(self):
         self.assertTrue(perfectSquare(81))
         self.assertTrue(perfectSquare(625))
@@ -21,9 +32,6 @@ class TestAssignment(unittest.TestCase):
     def test_power_of_four(self):
         self.assertTrue(powerOfFour(16))
         self.assertFalse(powerOfFour(15))
-
-    def test_json_dict(self):
-        pass
 
     def test_simple_stats(self):
         self.assertEqual(statss([56,44,5,6,6,7,8,99,34,56,3232]),
