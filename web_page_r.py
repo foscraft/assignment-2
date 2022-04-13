@@ -5,7 +5,7 @@ Python program to send a request to a web page, and print the response text
 and content
 '''
 
-def ids_open_dict():
+def webPage_response():
     '''
     This function returns a list of all authorships and orcid ids in OpenAlex.
     ''' 
@@ -16,4 +16,4 @@ def ids_open_dict():
         #return json.loads(rr.text)
 
 #invoke function
-print(ids_open_dict())
+print(webPage_response())
