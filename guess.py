@@ -2,12 +2,13 @@ import random
 '''
 Python project to guess a number that has randomly been selected
 '''
+
+def random_number(start,end):
+	return random.randrange(start,end)
+
 def perfect_guess():
-
-	number=random.randrange(0,5)
+	number = random_number(0,5)
 	guess="wrong"
-	print("Welcome to Skaehub Guess Game")
-
 	while guess=="wrong":
 		response=input("Please input a number between 0 and 5:")
 		try:
@@ -24,4 +25,5 @@ def perfect_guess():
 			print("This is the correct number, Bye!")
 			guess="correct"
 
+random_number(0,5)
 perfect_guess()

@@ -14,7 +14,6 @@ def to_json(data):
     '''
     parsing JSON to a dictionary object
     '''
-    #rr = requests.get('https://api.openalex.org/authors')
     return json.loads(data.text)
     
 json_store=jsons_response('https://api.openalex.org/authors')

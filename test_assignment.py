@@ -4,7 +4,7 @@ from urllib import response
 import requests
 from json_dict import to_json,jsons_response
 # from json_dict import jsonsResponse, toJson
-# from perfect_guess import perfectGuess
+from guess import perfect_guess, random_number #,perfect_guess
 from perfect_square import perfect_square
 from power_of_four import power_of_four
 from simple_statistics import statss
@@ -14,8 +14,13 @@ from simple_statistics import statss
 
 class TestAssignment(unittest.TestCase):
 
+    def test_random_number(self):
+        self.assertIsInstance(random_number(0,5),int)
+
     def test_perfect_guess(self):
-        pass
+        self.assertEqual(perfect_guess(),"This is higher. Please try again.")
+        self.assertEqual(perfect_guess(),"This is lower. Please try again.")
+        self.assertEqual(perfect_guess(),"This is not a valid integer. Please try again")
 
     def test_json_dict(self):
         self.assertTrue(to_json(jsons_response('https://api.openalex.org/authors'))['meta'],
@@ -42,7 +47,8 @@ class TestAssignment(unittest.TestCase):
         pass
 
     def test_web_response(self):
-        pass
+        resp = requests.get('https://api.openalex.org/authors?per-page=100&page=1')
+        self.assertEqual(resp.status_code,200)
 
 
 if __name__ == '__main__':
