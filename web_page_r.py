@@ -1,13 +1,11 @@
 import requests
 import json
-'''
-Python program to send a request to a web page, and print the response text
-and content
-'''
+
 
 def webPage_response():
     '''
-    This function returns a list of all authorships and orcid ids in OpenAlex.
+    Python program to send a request to a web page, and print the response text
+    and content
     ''' 
     k = list(range(1,2))
     for j in k:

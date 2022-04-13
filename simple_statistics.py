@@ -1,8 +1,9 @@
 from statistics import mean, median
-'''
-Python project to perform some simple statistics on a list of values
-'''
+
 def stats(my_list):
+    '''
+    Python project to perform some simple statistics on a list of values
+    '''
     ma = max(my_list)
     mi = min(my_list)
     mn = mean(my_list)

@@ -1,8 +1,7 @@
-'''
-Checking whether a number is a power of four
-'''
-
 def poweroffour(number):
+    '''
+    Check if a number is a power of four'''
+    
     if number ==0:
         return False
     while number !=1:

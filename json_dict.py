@@ -1,13 +1,12 @@
-'''
-Python project to read public data returned from URL, and parsing JSON to a
-dictionary object
-'''
 import re
 import requests
 import json
 
 def jsonResponse():
-
+    '''
+    Python project to read public data returned from URL, and parsing JSON to a
+    dictionary object
+    '''
     rr = requests.get('https://api.openalex.org/authors')
     data = json.loads(rr.text)
     return [{"open_alex_id": i['id'], 

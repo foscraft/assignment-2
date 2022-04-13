@@ -1,8 +1,9 @@
 import math
-'''
-Function that checks if  a number is a perfect square
-'''
+
 def number_perfect_square(number):
+    '''
+    Function that checks if  a number is a perfect square
+    '''
  
     if (number >= 0):
         #to convert it into integer
