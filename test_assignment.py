@@ -3,14 +3,11 @@ from urllib import response
 
 import requests
 from json_dict import to_json,jsons_response
-# from json_dict import jsonsResponse, toJson
-from guess import perfect_guess, random_number #,perfect_guess
+from guess import perfect_guess, random_number
 from perfect_square import perfect_square
 from power_of_four import power_of_four
 from simple_statistics import statss
-# from simple_statistics import statss
 # from timeout import timeOutResponse
-# from web_page_r import webPageResponse
 
 class TestAssignment(unittest.TestCase):
 
