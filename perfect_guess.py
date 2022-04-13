@@ -2,7 +2,7 @@ import random
 '''
 Python project to guess a number that has randomly been selected
 '''
-def perfectGuess():
+def perfect_guess():
 
 	number=random.randrange(0,5)
 	guess="wrong"
@@ -24,4 +24,4 @@ def perfectGuess():
 			print("This is the correct number, Bye!")
 			guess="correct"
 
-perfectGuess()
+perfect_guess()

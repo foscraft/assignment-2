@@ -1,4 +1,4 @@
-def powerOfFour(number):
+def power_of_four(number):
     '''
     Check if a number is a power of four'''
     
@@ -12,4 +12,4 @@ def powerOfFour(number):
 
 #invoke function
 
-print(powerOfFour(16))
+print(power_of_four(16))

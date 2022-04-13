@@ -2,7 +2,7 @@ import requests
 import json
 
 
-def timeOutResponse():
+def time_out_response():
     '''
     Python program to send a timed request to a web page
     ''' 
@@ -13,4 +13,4 @@ def timeOutResponse():
         #return json.loads(rr.text)
 
 #invoke function
-print(timeOut_response())
+print(time_out_response())

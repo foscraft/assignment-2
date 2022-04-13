@@ -2,7 +2,7 @@ import requests
 import json
 
 
-def webPageResponse():
+def web_page_response():
     '''
     Python program to send a request to a web page, and print the response text
     and content
@@ -14,4 +14,4 @@ def webPageResponse():
         #return json.loads(rr.text)
 
 #invoke function
-print(webPage_response())
+print(web_page_response())

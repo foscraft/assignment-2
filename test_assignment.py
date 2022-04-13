@@ -2,11 +2,11 @@ import unittest
 from urllib import response
 
 import requests
-from json_dict import toJson
+from json_dict import to_json,jsons_response
 # from json_dict import jsonsResponse, toJson
 # from perfect_guess import perfectGuess
-from perfect_square import perfectSquare
-from power_of_four import powerOfFour
+from perfect_square import perfect_square
+from power_of_four import power_of_four
 from simple_statistics import statss
 # from simple_statistics import statss
 # from timeout import timeOutResponse
@@ -18,20 +18,21 @@ class TestAssignment(unittest.TestCase):
         pass
 
     def test_json_dict(self):
-        pass
-    
-    def test_toJson(self):
+        self.assertTrue(to_json(jsons_response('https://api.openalex.org/authors'))['meta'],
+                type(to_json(jsons_response('https://api.openalex.org/authors'))['meta'])==dict)
+
+    def test_jsons_dict(self):
         resp = requests.get('https://api.openalex.org/authors')
         self.assertEqual(resp.status_code, 200)
 
     def test_perfect_square(self):
-        self.assertTrue(perfectSquare(81))
-        self.assertTrue(perfectSquare(625))
-        self.assertFalse(perfectSquare(243))
+        self.assertTrue(perfect_square(81))
+        self.assertTrue(perfect_square(625))
+        self.assertFalse(perfect_square(243))
 
     def test_power_of_four(self):
-        self.assertTrue(powerOfFour(16))
-        self.assertFalse(powerOfFour(15))
+        self.assertTrue(power_of_four(16))
+        self.assertFalse(power_of_four(15))
 
     def test_simple_stats(self):
         self.assertEqual(statss([56,44,5,6,6,7,8,99,34,56,3232]),
