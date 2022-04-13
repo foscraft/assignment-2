@@ -4,7 +4,7 @@ import json
 
 def timeOut_response():
     '''
-    Python program to send a timed request request to a web page
+    Python program to send a timed request to a web page
     ''' 
     k = list(range(1,2))
     for j in k:
