@@ -7,6 +7,7 @@ from guess import perfect_guess, random_number
 from perfect_square import perfect_square
 from power_of_four import power_of_four
 from simple_statistics import statss
+from timeout import time_out_response
 # from timeout import timeOutResponse
 
 class TestAssignment(unittest.TestCase):
@@ -39,9 +40,6 @@ class TestAssignment(unittest.TestCase):
     def test_simple_stats(self):
         self.assertEqual(statss([56,44,5,6,6,7,8,99,34,56,3232]),
                         {'minimum value': 5, 'maximum_value': 3232, 'average': 323, 'median value': 34})
-
-    def test_timeout(self):
-        pass
 
     def test_web_response(self):
         resp = requests.get('https://api.openalex.org/authors?per-page=100&page=1')
