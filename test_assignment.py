@@ -7,8 +7,6 @@ from guess import perfect_guess, random_number
 from perfect_square import perfect_square
 from power_of_four import power_of_four
 from simple_statistics import statss
-from timeout import time_out_response
-# from timeout import timeOutResponse
 
 class TestAssignment(unittest.TestCase):
 
